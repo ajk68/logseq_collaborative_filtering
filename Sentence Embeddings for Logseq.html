@@ -14566,7 +14566,20 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Experiment-with-Sentence-Embeddings-for-Logseq">Experiment with Sentence Embeddings for Logseq<a class="anchor-link" href="#Experiment-with-Sentence-Embeddings-for-Logseq">&#182;</a></h1><p>Tried to see what i could do with embeddings. I've used a sentence transformer, who doesn't just look at words, but in context of a complete sentence and a multilingual one (as most of my graph is in dutch, with 10-20% english).</p>
+<p>Results are encouraging. See below. Calculating cosine similarity for the huge embeddings takes less than a second on my laptop with 40K+ blocks. And results are pretty spectacular, even pulling relevant dutch results for english blocks.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14574,8 +14587,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install https://github.com/fastai/fastai/archive/master.zip
-<span class="o">!</span>pip install transformers
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install transformers
 <span class="o">!</span>pip install sentence_transformers
 </pre></div>
 
